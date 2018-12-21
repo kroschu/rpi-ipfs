@@ -1,7 +1,7 @@
 #dockerfile for rpi-ipfs
 #builds a Raspberry Pi compatible Docker image that when run creates an IPFS Node
 
-FROM resin/raspberry-pi-alpine-golang
+FROM nathanosman/alpine-golang-armhf
 MAINTAINER @kroschu
 ENV IPFS_PATH /data/ipfs
 ENV VERSION v0.4.17
