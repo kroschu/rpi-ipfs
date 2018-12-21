@@ -7,8 +7,7 @@ ENV IPFS_PATH /data/ipfs
 ENV VERSION v0.4.18
 EXPOSE 4001 5001 8080
 VOLUME /data/ipfs
-ADD https://raw.githubusercontent.com/analogvoid/rpi-ipfs/master/container_shacheck /usr/local/bin/shacheck
-ADD https://raw.githubusercontent.com/analogvoid/rpi-ipfs/master/container_daemon /usr/local/bin/start_ipfs
+ADD https://raw.githubusercontent.com/kroschu/rpi-ipfs/master/container_daemon /usr/local/bin/start_ipfs
 RUN apk update \
  && apk upgrade \
  && apk add --update bash curl wget ca-certificates tar \
