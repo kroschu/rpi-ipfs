@@ -1,10 +1,10 @@
 #dockerfile for rpi-ipfs
 #builds a Raspberry Pi compatible Docker image that when run creates an IPFS Node
 
-FROM hypriot/rpi-alpine-scratch
-MAINTAINER @analogvoid
+FROM resin/raspberry-pi-alpine-golang
+MAINTAINER @kroschu
 ENV IPFS_PATH /data/ipfs
-ENV VERSION v0.4.18
+ENV VERSION v0.4.17
 EXPOSE 4001 5001 8080
 VOLUME /data/ipfs
 ADD https://raw.githubusercontent.com/kroschu/rpi-ipfs/master/container_daemon /usr/local/bin/start_ipfs
