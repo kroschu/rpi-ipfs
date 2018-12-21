@@ -4,7 +4,7 @@
 FROM hypriot/rpi-alpine-scratch
 MAINTAINER @kroschu
 ENV IPFS_PATH /data/ipfs
-ENV VERSION v0.4.
+ENV VERSION v0.4.13
 EXPOSE 4001 5001 8080
 VOLUME /data/ipfs
 ADD https://raw.githubusercontent.com/kroschu/rpi-ipfs/master/container_daemon /usr/local/bin/start_ipfs
